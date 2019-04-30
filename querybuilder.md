@@ -1,7 +1,7 @@
 # Aggregation
 
 Abstract aggregation operation.
-
+    
 
 <details><summary>Aggregations</summary>
 
@@ -12,7 +12,7 @@ Abstract aggregation operation.
 ## 3 Month Moving Average
 
 Periods = 3, Frequency = Month
-
+    
 
 </details>
 
@@ -50,7 +50,7 @@ over a rolling 12 month period.
 ## Annual Volume Tier
 
 A merchant's volume tier is based on its **total** volume over a rolling 12 month period.
-
+    
 
 ## Transaction Tier
 
@@ -81,22 +81,22 @@ Sales model code
 ## Industry Classification Type
 
 Industry Classification Type. Currently this is either MCC or SIC.
-
+    
 
 ## Industry Group
 
 Hierarchical grouping of Industries
-
+    
 
 ## Industry
 
 Industry the merchant belongs to.
-
+    
 
 ## Portfolio
 
 A grouping of merchants within an organization.
-
+    
 
 ## Data Month
 
@@ -119,7 +119,7 @@ Year merchant entered the market
 # Metrics
 
 Base metric class.
-
+    
 
 <details><summary>Metrics</summary>
 
@@ -257,8 +257,9 @@ There are three columns used in AIM normalization (with corresponding units):
 
 Where "-" is a null unit.
 
-Unit Matrix:
+Unit Matrix::
 
+```
 ===================  ======  ============  ================
 Metric / Normalizer  Volume  Transactions  Active Merchants
 ===================  ======  ============  ================
@@ -266,6 +267,7 @@ Transactions           -          -               -
 Volume                 -          $               $
 All Other Metrics      -          $               $
 ===================  ======  ============  ================
+```
 
 <details><summary>Normalizations</summary>
 
@@ -279,10 +281,11 @@ Unitless due to being a count.
 ## Per Transaction
 
 Transactions - Unitless due to being a count.
-
+    
 
 ## Per Volume
 
 Volume - Units in dollars.
 
 </details>
+
