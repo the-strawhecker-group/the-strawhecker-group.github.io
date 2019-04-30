@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>warehouse.views.warehouse module &#8212; warehouse 1.0 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -36,234 +34,229 @@
             
   <div class="section" id="warehouse-views-warehouse-module">
 <h1>warehouse.views.warehouse module<a class="headerlink" href="#warehouse-views-warehouse-module" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-center">
 <colgroup>
-<col width="20%" />
-<col width="45%" />
-<col width="35%" />
+<col style="width: 20%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Resource</th>
-<th class="head">Operation</th>
-<th class="head">Description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Resource</p></th>
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-_internal-v1-preliminary-authorization">GET /api/_internal/v1/preliminary-authorization</a></td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-_internal-v1-preliminary-authorization">GET /api/_internal/v1/preliminary-authorization</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-upload-request-">GET /api/warehouse/v1/upload-request/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-upload-request-">GET /api/warehouse/v1/upload-request/</a></p></td>
+<td><p>File Upload Only</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-upload-request-(int-id_)">GET /api/warehouse/v1/upload-request/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-upload-request-(int-id_)">GET /api/warehouse/v1/upload-request/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-upload-request-(int-id_)">PUT /api/warehouse/v1/upload-request/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-upload-request-(int-id_)">DELETE /api/warehouse/v1/upload-request/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-upload-request-(int-id_)">DELETE /api/warehouse/v1/upload-request/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-upload-request-(int-id_)">PUT /api/warehouse/v1/upload-request/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-upload-request-">POST /api/warehouse/v1/upload-request/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-upload-request-">POST /api/warehouse/v1/upload-request/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-industry-type-">GET /api/warehouse/v1/industry-type/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-industry-type-">GET /api/warehouse/v1/industry-type/</a></p></td>
+<td><p>Get an IndustryType by id</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-industry-type-(int-id_)">GET /api/warehouse/v1/industry-type/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-industry-type-(int-id_)">GET /api/warehouse/v1/industry-type/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-industry-type-(int-id_)">PUT /api/warehouse/v1/industry-type/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-industry-type-(int-id_)">DELETE /api/warehouse/v1/industry-type/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-industry-type-(int-id_)">DELETE /api/warehouse/v1/industry-type/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-industry-type-(int-id_)">PUT /api/warehouse/v1/industry-type/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-industry-type-">POST /api/warehouse/v1/industry-type/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-industry-type-">POST /api/warehouse/v1/industry-type/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-legacy-export">GET /api/warehouse/v1/legacy-export</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-legacy-export">GET /api/warehouse/v1/legacy-export</a></p></td>
+<td><p>Provide an API to access legacy exports.</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-portfolio-">GET /api/warehouse/v1/portfolio/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-portfolio-">GET /api/warehouse/v1/portfolio/</a></p></td>
+<td><p>Get a Portfolio by id</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-portfolio-(int-id_)">GET /api/warehouse/v1/portfolio/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-portfolio-(int-id_)">GET /api/warehouse/v1/portfolio/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-portfolio-(int-id_)">PUT /api/warehouse/v1/portfolio/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-portfolio-(int-id_)">DELETE /api/warehouse/v1/portfolio/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-portfolio-(int-id_)">DELETE /api/warehouse/v1/portfolio/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-portfolio-(int-id_)">PUT /api/warehouse/v1/portfolio/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-portfolio-">POST /api/warehouse/v1/portfolio/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-portfolio-">POST /api/warehouse/v1/portfolio/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-filetype-">GET /api/warehouse/v1/filetype/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-filetype-">GET /api/warehouse/v1/filetype/</a></p></td>
+<td><p>Defines upload formats</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-filetype-(int-id_)">GET /api/warehouse/v1/filetype/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-filetype-(int-id_)">GET /api/warehouse/v1/filetype/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-filetype-(int-id_)">PUT /api/warehouse/v1/filetype/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-filetype-(int-id_)">DELETE /api/warehouse/v1/filetype/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-filetype-(int-id_)">DELETE /api/warehouse/v1/filetype/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-filetype-(int-id_)">PUT /api/warehouse/v1/filetype/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-filetype-">POST /api/warehouse/v1/filetype/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-filetype-">POST /api/warehouse/v1/filetype/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-upload-">GET /api/warehouse/v1/upload/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-report-">GET /api/warehouse/v1/report/</a></p></td>
+<td><p>Encapsulates Report routes</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-upload-(int-id_)">GET /api/warehouse/v1/upload/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-report-(int-id_)">GET /api/warehouse/v1/report/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-upload-(int-id_)">PUT /api/warehouse/v1/upload/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-report-(int-id_)">DELETE /api/warehouse/v1/report/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-upload-(int-id_)">DELETE /api/warehouse/v1/upload/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-report-(int-id_)">PUT /api/warehouse/v1/report/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-upload-">POST /api/warehouse/v1/upload/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-report-">POST /api/warehouse/v1/report/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-chart-">GET /api/warehouse/v1/chart/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-upload-">GET /api/warehouse/v1/upload/</a></p></td>
+<td><p>File Upload Only</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-chart-(int-id_)">GET /api/warehouse/v1/chart/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-upload-(int-id_)">GET /api/warehouse/v1/upload/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-chart-(int-id_)">PUT /api/warehouse/v1/chart/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-upload-(int-id_)">DELETE /api/warehouse/v1/upload/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-chart-(int-id_)">DELETE /api/warehouse/v1/chart/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-upload-(int-id_)">PUT /api/warehouse/v1/upload/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-chart-">POST /api/warehouse/v1/chart/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-upload-">POST /api/warehouse/v1/upload/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-query">GET /api/warehouse/v1/query</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-chart-">GET /api/warehouse/v1/chart/</a></p></td>
+<td><p>Encapsulates Chart routes</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-auth-v1-user-">GET /api/auth/v1/user/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-chart-(int-id_)">GET /api/warehouse/v1/chart/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-auth-v1-user-(int-id_)">GET /api/auth/v1/user/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#delete--api-warehouse-v1-chart-(int-id_)">DELETE /api/warehouse/v1/chart/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-auth-v1-user-(int-id_)">PUT /api/auth/v1/user/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#put--api-warehouse-v1-chart-(int-id_)">PUT /api/warehouse/v1/chart/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-auth-v1-user-(int-id_)">DELETE /api/auth/v1/user/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#post--api-warehouse-v1-chart-">POST /api/warehouse/v1/chart/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-auth-v1-user-">POST /api/auth/v1/user/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-query">GET /api/warehouse/v1/query</a></p></td>
+<td><p>Main analytical endpoint</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-normalization-">GET /api/warehouse/v1/normalization/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-auth-v1-user-">GET /api/auth/v1/user/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-normalization-(string-id_)">GET /api/warehouse/v1/normalization/(string:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-auth-v1-user-(int-id_)">GET /api/auth/v1/user/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-aggregation-">GET /api/warehouse/v1/aggregation/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#delete--api-auth-v1-user-(int-id_)">DELETE /api/auth/v1/user/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-aggregation-(string-id_)">GET /api/warehouse/v1/aggregation/(string:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#put--api-auth-v1-user-(int-id_)">PUT /api/auth/v1/user/(int:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-attribute-">GET /api/warehouse/v1/attribute/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#post--api-auth-v1-user-">POST /api/auth/v1/user/</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-attribute-(string-id_)">GET /api/warehouse/v1/attribute/(string:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-normalization-">GET /api/warehouse/v1/normalization/</a></p></td>
+<td><p>List query metric normalizations</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-metric-">GET /api/warehouse/v1/metric/</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-normalization-(string-id_)">GET /api/warehouse/v1/normalization/(string:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-metric-(string-id_)">GET /api/warehouse/v1/metric/(string:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-aggregation-">GET /api/warehouse/v1/aggregation/</a></p></td>
+<td><p>List query aggregations</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--static-(path-filename)">GET /static/(path:filename)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-aggregation-(string-id_)">GET /api/warehouse/v1/aggregation/(string:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>Report</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-report-">GET /api/warehouse/v1/report/</a></td>
-<td>Report CRUD operations</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-attribute-">GET /api/warehouse/v1/attribute/</a></p></td>
+<td><p>List attributes (filters and groups)</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#get--api-warehouse-v1-report-(int-id_)">GET /api/warehouse/v1/report/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-attribute-(string-id_)">GET /api/warehouse/v1/attribute/(string:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#put--api-warehouse-v1-report-(int-id_)">PUT /api/warehouse/v1/report/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-metric-">GET /api/warehouse/v1/metric/</a></p></td>
+<td><p>List metrics (columns)</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td><a class="reference external" href="#delete--api-warehouse-v1-report-(int-id_)">DELETE /api/warehouse/v1/report/(int:id_)</a></td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="#get--api-warehouse-v1-metric-(string-id_)">GET /api/warehouse/v1/metric/(string:id_)</a></p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td><a class="reference external" href="#post--api-warehouse-v1-report-">POST /api/warehouse/v1/report/</a></td>
-<td>&#160;</td>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="#get--static-(path-filename)">GET /static/(path:filename)</a></p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<dl class="get">
-<dt>
-<code class="descname">GET </code><code class="descname">//_internal/v1/preliminary-authorization</code></dt>
-<dd></dd></dl>
-
 </div>
 
 
@@ -282,14 +275,54 @@
 
 
 
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="warehouse.html">warehouse package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="warehouse.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="warehouse.bigquery.html">warehouse.bigquery package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="warehouse.querybuilder.html">warehouse.querybuilder package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="warehouse.views.html">warehouse.views package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="warehouse.views.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="warehouse.views.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="warehouse.views.auth.html">warehouse.views.auth module</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">warehouse.views.warehouse module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="warehouse.views.html#module-warehouse.views">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="warehouse.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warehouse.html#module-warehouse">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Readme File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#org-admin-invite">ORG ADMIN INVITE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#trigger-uploads">TRIGGER UPLOADS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#build-sphinx-documentation">BUILD SPHINX DOCUMENTATION</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="warehouse.html">warehouse package</a><ul>
+  <li><a href="warehouse.views.html">warehouse.views package</a><ul>
+      <li>Previous: <a href="warehouse.views.auth.html" title="previous chapter">warehouse.views.auth module</a></li>
+      <li>Next: <a href="warehouse.bigquery_helpers.html" title="next chapter">warehouse.bigquery_helpers module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -310,7 +343,7 @@
       &copy;2019, Six Analytics, LLC.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
