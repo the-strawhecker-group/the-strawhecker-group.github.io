@@ -1,6 +1,7 @@
 # AIM API
 
 ## Welcome to the AIM api by the Strawhecker Group!
+[Endpoints](./warehouse.views.warehouse.html)
 
 ### Introduction
     The AIM API reports on payment processing stats
