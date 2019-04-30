@@ -9,7 +9,7 @@
     A refresh token is issued at login.
 
 ### Endpoint Overview
-    [Endpoints](./warehouse.views.warehouse.html)
+[Endpoints](./warehouse.views.warehouse.html)
 
 ### Query Endpoint Deep Dive
-    [Querybuilder](./querybuilder.md)
+[Querybuilder](./querybuilder.md)
