@@ -1,6 +1,6 @@
 # AIM API
 
-Welcome to the AIM API documentation page!
+
 
 # Metric
 
