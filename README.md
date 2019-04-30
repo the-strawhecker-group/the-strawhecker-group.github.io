@@ -1,5 +1,12 @@
 # AIM API
 
+## Welcome to the AIM api by the Strawhecker Group!
+
+### Introduction
+    The AIM API reports on payment processing stats
+
+### Api Token Access
+    TODO
 
 
 # Metric
@@ -7,7 +14,7 @@
 Base metric class.
     
 
-## Items
+## Metrics
 
 ### COS Total Processing Fees
 
@@ -139,7 +146,7 @@ Attribute base class.
     attribute columns (Ex. Date, Card, Region) that are used to filter or group the metric.
     
 
-## Items
+## Attributes
 
 ### Card
 
@@ -262,7 +269,7 @@ Year merchant entered the market
 
     
 
-## Items
+## Normalizations
 
 ### Per Merchant
 
@@ -288,7 +295,7 @@ Volume - Units in dollars.
  Abstract aggregation operation.
     
 
-## Items
+## Aggregations
 
 ### None
 
