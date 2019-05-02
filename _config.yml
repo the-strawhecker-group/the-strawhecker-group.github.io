@@ -2,4 +2,3 @@ markdown: kramdown
 kramdown:
   input: GFM
   gfm_quirks: [paragraph_end, no_auto_typographic]
-  parse_block_html: true
