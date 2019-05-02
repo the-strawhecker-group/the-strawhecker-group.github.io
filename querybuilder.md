@@ -3,7 +3,7 @@
 Abstract aggregation operation.
     
 
-<details><summary>Aggregations</summary>
+<details markdown='1'><summary>Aggregations</summary>
 
 ## None
 
@@ -22,7 +22,7 @@ Attribute base class.
 Metrics are columns of interest (Ex. Volume, Net Revenue, Processing Cost) that are co-tabulated with
 attribute columns (Ex. Date, Card, Region) that are used to filter or group the metric.
 
-<details><summary>Attributes</summary>
+<details markdown='1'><summary>Attributes</summary>
 
 ## Card
 
@@ -121,7 +121,7 @@ Year merchant entered the market
 Base metric class.
     
 
-<details><summary>Metrics</summary>
+<details markdown='1'><summary>Metrics</summary>
 
 ## COS Total Processing Fees
 
@@ -269,7 +269,7 @@ All Other Metrics      -          $               $
 ===================  ======  ============  ================
 ```
 
-<details><summary>Normalizations</summary>
+<details markdown='1'><summary>Normalizations</summary>
 
 ## Per Merchant
 
@@ -288,4 +288,3 @@ Transactions - Unitless due to being a count.
 Volume - Units in dollars.
 
 </details>
-
